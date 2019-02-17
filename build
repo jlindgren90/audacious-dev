@@ -1,0 +1,20 @@
+#!/bin/sh
+
+mkdir -p dst
+DST=$(cd dst && pwd)
+
+export AUDACIOUS_CFLAGS="-I${DST}/usr/include"
+export AUDACIOUS_LIBS="-L${DST}/usr/lib -laudcore"
+export PKG_CONFIG_PATH="${DST}/usr/lib/pkgconfig"
+
+cd audacious
+test -f configure || ./autogen.sh
+test -f config.h || ./configure --prefix=/usr --enable-qt
+make -j4
+make -j4 DESTDIR=${DST} install
+
+cd ../audacious-plugins
+test -f configure || ./autogen.sh
+test -f config.h || ./configure --prefix=/usr --enable-qt
+make -j4
+make -j4 DESTDIR=${DST} install

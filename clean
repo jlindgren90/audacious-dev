@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -rf dst pkg src
+
+(cd audacious && make clean)
+(cd audacious-plugins && make clean)

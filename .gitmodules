@@ -1,0 +1,6 @@
+[submodule "audacious"]
+	path = audacious
+	url = git@github.com:audacious-media-player/audacious.git
+[submodule "audacious-plugins"]
+	path = audacious-plugins
+	url = git@github.com:audacious-media-player/audacious-plugins.git
