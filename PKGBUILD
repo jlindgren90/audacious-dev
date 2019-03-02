@@ -1,5 +1,5 @@
-pkgname=audacious
-pkgver=dev
+pkgname=audacious-dev
+pkgver=0.1
 pkgrel=1
 arch=('x86_64')
 url="https://audacious-media-player.org/"
