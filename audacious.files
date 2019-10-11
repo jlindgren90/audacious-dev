@@ -511,6 +511,10 @@ audacious-plugins/src/vtx/lh5dec.cc
 audacious-plugins/src/vtx/vtx.cc
 audacious-plugins/src/vtx/vtxfile.cc
 audacious-plugins/src/vtx/vtx.h
+audacious-plugins/src/vumeter-qt/vumeter_qt.cc
+audacious-plugins/src/vumeter-qt/vumeter_qt.h
+audacious-plugins/src/vumeter-qt/vumeter_qt_widget.cc
+audacious-plugins/src/vumeter-qt/vumeter_qt_widget.h
 audacious-plugins/src/waveout/waveout.cc
 audacious-plugins/src/wavpack/wavpack.cc
 audacious-plugins/src/xsf/ao.h

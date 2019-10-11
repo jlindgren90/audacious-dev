@@ -84,6 +84,7 @@ audacious-plugins/src/ui-common
 audacious-plugins/src/voice_removal
 audacious-plugins/src/vorbis
 audacious-plugins/src/vtx
+audacious-plugins/src/vumeter-qt
 audacious-plugins/src/waveout
 audacious-plugins/src/wavpack
 audacious-plugins/src/xsf
