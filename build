@@ -8,13 +8,13 @@ export AUDACIOUS_LIBS="-L${DST}/usr/lib -laudcore"
 export PKG_CONFIG_PATH="${DST}/usr/lib/pkgconfig"
 
 cd audacious
-test -f configure || ./autogen.sh
-test -f config.h || ./configure --prefix=/usr --enable-qt
-make -j4
-make -j4 DESTDIR=${DST} install
+test -f configure || ./autogen.sh || exit $?
+test -f config.h || ./configure --prefix=/usr --enable-qt || exit $?
+make -j4 || exit $?
+make -j4 DESTDIR=${DST} install || exit $?
 
 cd ../audacious-plugins
-test -f configure || ./autogen.sh
-test -f config.h || ./configure --prefix=/usr --enable-qt
-make -j4
+test -f configure || ./autogen.sh || exit $?
+test -f config.h || ./configure --prefix=/usr --enable-qt || exit $?
+make -j4 || exit $?
 make -j4 DESTDIR=${DST} install

@@ -47,6 +47,7 @@ audacious-plugins/src/asx3/asx3.cc
 audacious-plugins/src/asx/asx.cc
 audacious-plugins/src/audpl/audpl.cc
 audacious-plugins/src/blur_scope/blur_scope.cc
+audacious-plugins/src/blur_scope-qt/blur_scope.cc
 audacious-plugins/src/bs2b/plugin.cc
 audacious-plugins/src/cairo-spectrum/cairo-spectrum.cc
 audacious-plugins/src/cdaudio/cdaudio-ng.cc
@@ -646,10 +647,10 @@ audacious/src/libaudcore/templates.h
 audacious/src/libaudcore/tests/stubs.cc
 audacious/src/libaudcore/tests/test.cc
 audacious/src/libaudcore/tests/test-mainloop.cc
+audacious/src/libaudcore/threads.h
 audacious/src/libaudcore/timer.cc
 audacious/src/libaudcore/tinylock.cc
 audacious/src/libaudcore/tinylock.h
-audacious/src/libaudcore/threads.h
 audacious/src/libaudcore/tuple.cc
 audacious/src/libaudcore/tuple-compiler.cc
 audacious/src/libaudcore/tuple-compiler.h
@@ -701,6 +702,8 @@ audacious/src/libaudgui/util.cc
 audacious/src/libaudqt/about-qt.cc
 audacious/src/libaudqt/art-qt.cc
 audacious/src/libaudqt/audqt.cc
+audacious/src/libaudqt/colorbutton.cc
+audacious/src/libaudqt/colorbutton.h
 audacious/src/libaudqt/eq-preset-qt.cc
 audacious/src/libaudqt/equalizer-qt.cc
 audacious/src/libaudqt/export.h
