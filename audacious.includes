@@ -60,6 +60,7 @@ audacious-plugins/src/psf/peops2
 audacious-plugins/src/pulse
 audacious-plugins/src/qtaudio
 audacious-plugins/src/qtglspectrum
+audacious-plugins/src/qt-spectrum
 audacious-plugins/src/qtui
 audacious-plugins/src/resample
 audacious-plugins/src/scrobbler2

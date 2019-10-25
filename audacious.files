@@ -306,6 +306,7 @@ audacious-plugins/src/psf/psx_hw.cc
 audacious-plugins/src/pulse/pulse_audio.cc
 audacious-plugins/src/qtaudio/qtaudio.cc
 audacious-plugins/src/qtglspectrum/gl-spectrum.cc
+audacious-plugins/src/qt-spectrum/qt-spectrum.cc
 audacious-plugins/src/qtui/dialogs-qt.cc
 audacious-plugins/src/qtui/info_bar.cc
 audacious-plugins/src/qtui/info_bar.h
