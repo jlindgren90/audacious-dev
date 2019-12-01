@@ -714,6 +714,7 @@ audacious/src/libaudqt/equalizer-qt.cc
 audacious/src/libaudqt/export.h
 audacious/src/libaudqt/file-entry.cc
 audacious/src/libaudqt/fileopener.cc
+audacious/src/libaudqt/font-entry.cc
 audacious/src/libaudqt/iface.h
 audacious/src/libaudqt/images.cc
 audacious/src/libaudqt/infopopup-qt.cc
