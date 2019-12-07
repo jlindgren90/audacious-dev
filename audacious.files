@@ -341,6 +341,12 @@ audacious-plugins/src/scrobbler2/scrobbler_communication.cc
 audacious-plugins/src/scrobbler2/scrobbler.h
 audacious-plugins/src/scrobbler2/scrobbler_xml_parsing.cc
 audacious-plugins/src/sdlout/sdlout.cc
+audacious-plugins/src/search-tool-qt/html-delegate.cc
+audacious-plugins/src/search-tool-qt/html-delegate.h
+audacious-plugins/src/search-tool-qt/library.cc
+audacious-plugins/src/search-tool-qt/library.h
+audacious-plugins/src/search-tool-qt/search-model.cc
+audacious-plugins/src/search-tool-qt/search-model.h
 audacious-plugins/src/search-tool-qt/search-tool-qt.cc
 audacious-plugins/src/search-tool/search-tool.cc
 audacious-plugins/src/sid/xmms-sid.cc
