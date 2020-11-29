@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find -path ./dst -prune -false -o -name '*.c' -o -name '*.cc' -o -name '*.h' -o -name Makefile | cut -c3- | sort > audacious.files
