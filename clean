@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -rf dst pkg src
+rm -rf audacious-build audacious-plugins-build dst pkg src
 
 (cd audacious && git clean -fdX)
 (cd audacious-plugins && git clean -fdX)
