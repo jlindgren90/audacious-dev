@@ -264,8 +264,6 @@ audacious-plugins/src/ladspa/plugin.h
 audacious-plugins/src/ladspa/plugin-list.cc
 audacious-plugins/src/lirc/lirc.cc
 audacious-plugins/src/lirc/Makefile
-audacious-plugins/src/lyricwiki/lyricwiki.cc
-audacious-plugins/src/lyricwiki/Makefile
 audacious-plugins/src/lyricwiki-qt/lyricwiki.cc
 audacious-plugins/src/lyricwiki-qt/Makefile
 audacious-plugins/src/m3u/m3u.cc
@@ -806,6 +804,7 @@ audacious/src/libaudcore/tests/Makefile
 audacious/src/libaudcore/tests/stubs.cc
 audacious/src/libaudcore/tests/test.cc
 audacious/src/libaudcore/tests/test-mainloop.cc
+audacious/src/libaudcore/threads.cc
 audacious/src/libaudcore/threads.h
 audacious/src/libaudcore/timer.cc
 audacious/src/libaudcore/tinylock.cc
