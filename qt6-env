@@ -1,0 +1,5 @@
+export QTCORE_CFLAGS="-DQT_CORE_LIB -I/usr/include/qt6/QtCore -I/usr/include/qt6 -fPIC"
+export QTCORE_LIBS="-lQt6Core"
+export QT_CFLAGS="-I/usr/include/qt6/QtCore -I/usr/include/qt6 -I/usr/include/qt6/QtGui -DQT_WIDGETS_LIB -I/usr/include/qt6/QtWidgets -DQT_GUI_LIB -DQT_CORE_LIB -fPIC"
+export QT_LIBS="-lQt6Widgets -lQt6Gui -lQt6Core"
+export QT_BINPATH="/usr/lib/qt6/bin"
