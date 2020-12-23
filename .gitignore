@@ -4,4 +4,4 @@ dst/
 pkg/
 src/
 audacious.creator.user
-audacious-dev-0.1-1-x86_64.pkg.tar.gz
+*.pkg.tar.*

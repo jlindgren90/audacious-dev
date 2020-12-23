@@ -922,3 +922,5 @@ audacious/src/libguess/guess_tab.c
 audacious/src/libguess/libguess.h
 audacious/src/libguess/Makefile
 audacious/src/Makefile
+audacious/win32/Makefile
+Makefile
