@@ -37,7 +37,7 @@ meson:
 
 install:
 	makepkg -f
-	sudo pacman --noconfirm -U audacious-dev-0.1-1-x86_64.pkg.tar.gz
+	sudo pacman --noconfirm -U audacious-dev-0.1-1-x86_64.pkg.tar.*
 
 clean:
 	cd audacious && git clean -fdX
