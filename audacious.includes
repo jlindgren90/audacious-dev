@@ -109,6 +109,7 @@ audacious/src/libguess
 /usr/include/gdk-pixbuf-2.0
 /usr/include/glib-2.0
 /usr/include/gtk-2.0
+/usr/include/harfbuzz
 /usr/include/libbinio
 /usr/include/libcue-1.4
 /usr/include/libxml2
