@@ -14,6 +14,11 @@ meson: export C_INCLUDE_PATH = $(DST)/usr/include
 meson: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
 meson: export LIBRARY_PATH = $(DST)/usr/lib
 
+meson-qt6: export C_INCLUDE_PATH = $(DST)/usr/include
+meson-qt6: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
+meson-qt6: export LIBRARY_PATH = $(DST)/usr/lib
+meson-qt6: export QMAKE = qmake6
+
 all:
 	mkdir -p dst
 	cd audacious && test -f configure || ./autogen.sh
@@ -32,6 +37,14 @@ meson:
 	cd audacious-build && meson compile
 	cd audacious-build && DESTDIR=$(DST) meson install
 	meson setup --prefix=/usr audacious-plugins-build audacious-plugins
+	cd audacious-plugins-build && meson compile
+	cd audacious-plugins-build && DESTDIR=$(DST) meson install
+
+meson-qt6:
+	meson setup --prefix=/usr -Dqt6=true audacious-build audacious
+	cd audacious-build && meson compile
+	cd audacious-build && DESTDIR=$(DST) meson install
+	meson setup --prefix=/usr -Dqt6=true audacious-plugins-build audacious-plugins
 	cd audacious-plugins-build && meson compile
 	cd audacious-plugins-build && DESTDIR=$(DST) meson install
 
