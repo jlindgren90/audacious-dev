@@ -8,7 +8,7 @@ qt6: export QTCORE_CFLAGS = -DQT_CORE_LIB -I/usr/include/qt6/QtCore -I/usr/inclu
 qt6: export QTCORE_LIBS = -lQt6Core
 qt6: export QT_CFLAGS = -I/usr/include/qt6/QtCore -I/usr/include/qt6 -I/usr/include/qt6/QtGui -DQT_WIDGETS_LIB -I/usr/include/qt6/QtWidgets -DQT_GUI_LIB -DQT_CORE_LIB -fPIC
 qt6: export QT_LIBS = -lQt6Widgets -lQt6Gui -lQt6Core
-qt6: export QT_BINPATH = /usr/lib/qt6/bin
+qt6: export QT_BINPATH = /usr/lib/qt6
 
 meson: export C_INCLUDE_PATH = $(DST)/usr/include
 meson: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
