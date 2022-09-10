@@ -1,5 +1,5 @@
-audacious-build/
-audacious-plugins-build/
+.cache/
+build/
 dst/
 pkg/
 src/
