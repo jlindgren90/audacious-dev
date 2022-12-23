@@ -8,9 +8,9 @@ meson: export C_INCLUDE_PATH = $(DST)/usr/include
 meson: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
 meson: export LIBRARY_PATH = $(DST)/usr/lib
 
-meson-qt6: export C_INCLUDE_PATH = $(DST)/usr/include
-meson-qt6: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
-meson-qt6: export LIBRARY_PATH = $(DST)/usr/lib
+meson-qt6-gtk3: export C_INCLUDE_PATH = $(DST)/usr/include
+meson-qt6-gtk3: export CPLUS_INCLUDE_PATH = $(DST)/usr/include
+meson-qt6-gtk3: export LIBRARY_PATH = $(DST)/usr/lib
 
 meson:
 	meson setup --prefix=/usr build/audacious audacious
@@ -21,10 +21,12 @@ meson:
 	 build/audacious-plugins/compile_commands.json \
 	 > build/compile_commands.json # for clangd
 
-meson-qt6:
-	meson setup --prefix=/usr -Dqt6=true build/audacious audacious
+meson-qt6-gtk3:
+	meson setup --prefix=/usr -Dqt6=true -Dgtk3=true \
+	 build/audacious audacious
 	cd build/audacious && meson compile && DESTDIR=$(DST) meson install
-	meson setup --prefix=/usr -Dqt6=true build/audacious-plugins audacious-plugins
+	meson setup --prefix=/usr -Dqt6=true -Dgtk3=true \
+	 build/audacious-plugins audacious-plugins
 	cd build/audacious-plugins && meson compile && DESTDIR=$(DST) meson install
 	jq -s add build/audacious/compile_commands.json \
 	 build/audacious-plugins/compile_commands.json \
