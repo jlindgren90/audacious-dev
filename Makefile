@@ -26,18 +26,18 @@ meson:
 	 > build/compile_commands.json # for clangd
 
 meson-qt5-gtk2:
-	meson setup --prefix=/usr -Dqt5=true build/audacious audacious
+	meson setup --prefix=/usr -Dqt5=true -Dgtk2=true build/audacious audacious
 	cd build/audacious && meson compile && DESTDIR=$(DST) meson install
-	meson setup --prefix=/usr -Dqt5=true build/audacious-plugins audacious-plugins
+	meson setup --prefix=/usr -Dqt5=true -Dgtk2=true build/audacious-plugins audacious-plugins
 	cd build/audacious-plugins && meson compile && DESTDIR=$(DST) meson install
 	jq -s add build/audacious/compile_commands.json \
 	 build/audacious-plugins/compile_commands.json \
 	 > build/compile_commands.json # for clangd
 
 meson-gtk3:
-	meson setup --prefix=/usr -Dgtk3=true build/audacious audacious
+	meson setup --prefix=/usr build/audacious audacious
 	cd build/audacious && meson compile && DESTDIR=$(DST) meson install
-	meson setup --prefix=/usr -Dgtk3=true build/audacious-plugins audacious-plugins
+	meson setup --prefix=/usr build/audacious-plugins audacious-plugins
 	cd build/audacious-plugins && meson compile && DESTDIR=$(DST) meson install
 	jq -s add build/audacious/compile_commands.json \
 	 build/audacious-plugins/compile_commands.json \
