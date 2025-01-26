@@ -5,9 +5,9 @@ arch=('x86_64')
 url="https://audacious-media-player.org/"
 license=('BSD' 'GPL')
 conflicts=('audacious' 'audacious-plugins')
-depends=('glib2' 'qt6-base' 'qt6-svg' 'adplug' 'alsa-lib' 'curl' 'faad2'
+depends=('glib2' 'qt6-base' 'qt6-svg' 'alsa-lib' 'curl' 'faad2'
          'ffmpeg' 'flac' 'fluidsynth' 'jack' 'lame' 'libbs2b' 'libcddb'
-         'libcdio-paranoia' 'libcue' 'libmms' 'libmodplug' 'libmtp' 'libnotify'
+         'libcdio-paranoia' 'libcue' 'libmms' 'libmodplug' 'libnotify'
          'libopenmpt' 'libpulse' 'libsamplerate' 'libsidplayfp' 'libvorbis'
          'lirc' 'mpg123' 'neon' 'wavpack')
 
